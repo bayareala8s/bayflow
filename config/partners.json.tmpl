@@ -1,0 +1,30 @@
+
+{
+  "partners": {
+    "acme": {
+      "enabled": true,
+      "flows": {
+        "inbound-v1": {
+          "source_prefix": "partners/acme/inbox/",
+          "target_prefix": "acme/inbox/processed/",
+          "archive_prefix": "acme/archive/",
+          "file_pattern": "*.csv",
+          "checksum": {
+            "enabled": false
+          },
+          "notifications": {
+            "on_success": [
+              "email:${alerts_email}"
+            ],
+            "on_failure": [
+              "email:${alerts_email}"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaults": {
+    "archive_enabled": true
+  }
+}

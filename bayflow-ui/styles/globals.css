@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #0f172a;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.main-shell {
+  @apply min-h-screen flex flex-col bg-slate-950 text-slate-100;
+}
+
+.main-shell-header {
+  @apply border-b border-slate-800 bg-slate-950/80 backdrop-blur;
+}
+
+.main-shell-nav {
+  @apply flex items-center justify-between max-w-6xl mx-auto px-6 py-4;
+}
+
+.main-shell-content {
+  @apply flex-1 max-w-6xl mx-auto px-6 py-6;
+}
+
+.nav-link {
+  @apply text-sm font-medium text-slate-300 hover:text-white transition-colors;
+}
+
+.nav-link-active {
+  @apply text-sm font-semibold text-white border-b-2 border-brand-500 pb-1;
+}
+
+.card {
+  @apply rounded-xl border border-slate-800 bg-slate-900/60 shadow-lg shadow-slate-900/40;
+}
+
+.card-header {
+  @apply flex items-center justify-between px-4 py-3 border-b border-slate-800;
+}
+
+.card-title {
+  @apply text-sm font-semibold text-slate-100;
+}
+
+.card-body {
+  @apply p-4;
+}

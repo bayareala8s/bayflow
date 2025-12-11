@@ -1,0 +1,15 @@
+# Node / Next.js
+bayflow-ui/node_modules/
+bayflow-ui/.next/
+
+# Terraform local state and providers
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+
+# Python / Lambda build artifacts
+lambda_mover.zip
+backend_api.zip
+
+# macOS
+.DS_Store
